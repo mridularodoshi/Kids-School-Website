@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* adding fonts */
@@ -9,4 +9,88 @@
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+/* colors */
+.orange {
+  color: rgb(254, 163, 1);
+}
+
+.sky-blue {
+  color: rgb(1, 172, 253);
+}
+
+.aqua {
+  color: rgb(5, 212, 223);
+}
+
+.purple {
+  color: rgb(93, 88, 239);
+}
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.bg-primary {
+  background-color: rgb(247, 247, 247);
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.btn-primary {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(254, 163, 1);
+  padding: 16px 60px;
+  border-radius: 12px;
+  border: none;
+}
+
+
+
+/* nav styles */
+.navbar {
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.nav-link {
+  margin-right: 32px;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+}
+
+.nav-title {
+  color: rgb(17, 17, 17);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+
+/* banner styles */
+header {
+  min-height: 677px;
+
 }
