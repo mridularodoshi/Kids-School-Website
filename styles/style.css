@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
 /* imaginary borders */
-body{
-  border: 1px solid blue;
+header,
+.std-curriculum {
+  border: 5px solid red;
 }
-header{
-  border: 1px solid red;
-}
+
 /* adding fonts */
 .quicksand-normal {
   font-family: "Quicksand", serif;
@@ -59,9 +59,14 @@ header{
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 .navbar,
-.banner {
+.banner,
+main {
   max-width: 1440px;
   margin: 0 auto;
 
@@ -77,14 +82,15 @@ header{
   border-radius: 12px;
   border: none;
 }
+
 /* marquee */
-.marquee-tag{
+.marquee-tag {
   background-color: turquoise;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgb(48, 45, 45);
 
 }
@@ -119,10 +125,11 @@ nav ul li {
   font-size: 30px;
 }
 
-#horizontal-line{
+#horizontal-line {
   display: none;
   border: 0.5px solid rgb(254, 163, 1);
 }
+
 /* banner styles */
 .banner {
   gap: 50px;
@@ -154,4 +161,90 @@ nav ul li {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 24px;
+}
+
+/* main section styles */
+main>section {
+  margin-top: 60px;
+}
+
+/* curriculum section styles */
+.std-curriculum {
+  background-image: url('../assets/bg.png');
+}
+
+.section-title {
+  color: rgb(0, 0, 0);
+  font-size: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.curr-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.curr-card>img {
+  max-width: 100%;
+
+}
+
+.curr-card {
+  box-sizing: border-box;
+  border-radius: 18.86px;
+  min-height: 476px;
+
+
+}
+
+#kinder {
+  border: 0.94px solid rgb(222, 245, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+#elementary {
+  border: 0.94px solid rgb(255, 244, 220);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+#middle {
+  border: 0.94px solid rgb(242, 232, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-title {
+  color: rgb(32, 32, 32);
+  font-size: 1.53rem;
+  font-weight: 700;
+  margin: 32px 0px;
+}
+
+.card-descrip {
+  color: rgb(128, 128, 128);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 28.3px;
+  margin-bottom: 38px;
+}
+.read{
+font-size: 0.9rem;
+font-weight: 700;
+line-height: 28.3px;
+letter-spacing: 0%;
+}
+
+.btn-less{
+  border: none;
+  border-radius:100%;
+  padding: 17px 23px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-right: 10px;
+
 }
