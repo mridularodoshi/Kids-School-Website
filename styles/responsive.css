@@ -1,26 +1,45 @@
 /* media query for small devices */
+
 @media screen and (max-width:576px) {
-   
-    /* navbar */
+    .banner, main{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .nav-title,.nav-links,.btn-container{
+        display: none;
+
+    }
     .hamburger-menu {
         display: block;
     }
     #horizontal-line{
         display: block;
       }
-    .nav-title,.nav-links,.btn-container{
-        display: none;
 
-    }
-    .navbar{
-        margin: 0px 16px;
-    }
-    /* banner */
-    .banner{
+      .banner{
         flex-direction: column-reverse;
-        margin: 20px auto;
-    }
-    .banner-title, .banner-descrip, .enroll-btn{
+      }
+      .banner-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-    }
+
+      }
+      .banner-title{
+        font-size: 2rem;
+      }
+      .banner-descrip{
+        font-size: 1rem;
+      }
+
+      .curr-card-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .arrow-con{
+        display: none;
+      }
+
+
 }

@@ -5,10 +5,10 @@
 }
 
 /* imaginary borders */
-header,
+/* header,
 .std-curriculum {
   border: 5px solid red;
-}
+} */
 
 /* adding fonts */
 .quicksand-normal {
@@ -74,7 +74,7 @@ main {
 
 .btn-primary {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
 
@@ -152,7 +152,6 @@ nav ul li {
 .banner-title {
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 61px;
   margin-bottom: 24px;
 }
 
@@ -247,4 +246,7 @@ letter-spacing: 0%;
   font-weight: 900;
   margin-right: 10px;
 
+}
+.btn-less:hover, .btn-primary:hover{
+  background-color:rgb(1, 172, 253);
 }
