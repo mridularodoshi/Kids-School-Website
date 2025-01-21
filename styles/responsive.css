@@ -1,6 +1,26 @@
 /* media query for small devices */
 @media screen and (max-width:576px) {
+   
+    /* navbar */
+    .hamburger-menu {
+        display: block;
+    }
+    #horizontal-line{
+        display: block;
+      }
+    .nav-title,.nav-links,.btn-container{
+        display: none;
 
-
-    
+    }
+    .navbar{
+        margin: 0px 16px;
+    }
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+        margin: 20px auto;
+    }
+    .banner-title, .banner-descrip, .enroll-btn{
+        text-align: center;
+    }
 }

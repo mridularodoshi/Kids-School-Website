@@ -3,7 +3,13 @@
   margin: 0;
   padding: 0;
 }
-
+/* imaginary borders */
+body{
+  border: 1px solid blue;
+}
+header{
+  border: 1px solid red;
+}
 /* adding fonts */
 .quicksand-normal {
   font-family: "Quicksand", serif;
@@ -97,9 +103,17 @@ nav ul li {
   font-weight: 700;
 }
 
+.hamburger-menu {
+  display: none;
+  width: 22.5px;
+  height: 30px;
+  font-size: 30px;
+}
 
-
-
+#horizontal-line{
+  display: none;
+  border: 0.5px solid rgb(254, 163, 1);
+}
 /* banner styles */
 .banner {
   gap: 50px;
@@ -130,6 +144,6 @@ nav ul li {
   color: rgb(17, 17, 17);
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 25px;
+  row-height: 25px;
   margin-bottom: 24px;
 }
