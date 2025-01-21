@@ -12,6 +12,18 @@
 }
 
 /* colors */
+.bg-primary {
+  background-color: rgb(247, 247, 247);
+}
+
+.bg-btn {
+  background-color: rgb(254, 163, 1);
+}
+
+.bg-btn2 {
+  background-color: rgb(17, 17, 17);
+}
+
 .orange {
   color: rgb(254, 163, 1);
 }
@@ -41,11 +53,9 @@
   align-items: center;
 }
 
-.bg-primary {
-  background-color: rgb(247, 247, 247);
-}
 
-.navbar {
+.navbar,
+.banner {
   max-width: 1440px;
   margin: 0 auto;
 
@@ -56,7 +66,7 @@
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  background-color: rgb(254, 163, 1);
+
   padding: 16px 60px;
   border-radius: 12px;
   border: none;
@@ -67,6 +77,7 @@
 /* nav styles */
 .navbar {
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 nav ul li {
@@ -90,7 +101,35 @@ nav ul li {
 
 
 /* banner styles */
-header {
-  min-height: 677px;
+.banner {
+  gap: 50px;
+  justify-content: space-between;
+}
 
+.banner-content {
+  max-width: 640px;
+}
+
+.banner-dp>img {
+  width: 100%;
+
+}
+
+.banner-dp {
+  max-width: 470px;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 24px;
+}
+
+.banner-descrip {
+  color: rgb(17, 17, 17);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 24px;
 }
