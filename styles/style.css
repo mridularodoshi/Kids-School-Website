@@ -5,7 +5,8 @@
 }
 
 /* imaginary borders  */
- header,
+header,
+body,
 .std-curriculum,
 .our-stories-container {
   border: 5px solid red;
@@ -14,6 +15,11 @@
 /* adding fonts */
 .quicksand-normal {
   font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway-normal {
+  font-family: "Raleway", serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -292,31 +298,36 @@ main>section {
 
 }
 
-.story1{
+.story1 {
   grid-area: story1;
 }
-.story2{
+
+.story2 {
   grid-area: story2;
 }
-.story3{
+
+.story3 {
   grid-area: story3;
 }
-.story4{
+
+.story4 {
   grid-area: story4;
 }
-.story5{
+
+.story5 {
   grid-area: story5;
 }
 
-.stories-card-container{
+.stories-card-container {
   display: grid;
   gap: 20px;
   justify-content: space-between;
   grid-template-areas:
-  "story1   story2 story3"
-  "story1   story4 story5";
-   margin-bottom: 80px;
+    "story1   story2 story3"
+    "story1   story4 story5";
+  margin-bottom: 80px;
 }
+
 .card-title2 {
 
   font-size: 1rem;
@@ -325,3 +336,42 @@ main>section {
   margin: 20px;
 
 }
+
+.date-badges {
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+
+  width: 174.51px;
+  height: 47.93px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: absolute; */
+
+}
+
+.date {
+  color: rgb(255, 255, 255);
+  font-size:1rem;
+  font-weight: 500;
+}
+.story1-dp, .stories-card{
+  position: relative;
+}
+#date1{
+  position: absolute;
+  left: 50px;
+  top: 310px;
+}
+#date2, #date3, #date4, #date5{
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  background-color: rgb(149, 178, 38);
+}
+#date3{
+  background-color: rgb(93, 88, 240);
+}
+
