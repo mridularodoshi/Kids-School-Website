@@ -5,12 +5,12 @@
 }
 
 /* imaginary borders  */
-header,
+/* header,
 body,
 .std-curriculum,
 .our-stories-container {
   border: 5px solid red;
-}
+} */
 
 /* adding fonts */
 .quicksand-normal {
@@ -18,6 +18,7 @@ body,
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 .raleway-normal {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
@@ -281,14 +282,14 @@ main>section {
 .stories-card {
   border-radius: 16px;
   background: rgb(255, 255, 255);
-  width: 290px;
+  max-width: 290px;
   min-height: 301px;
 }
 
 .story1 {
   border-radius: 16px;
   background: rgb(255, 255, 255);
-  width: 540px;
+  max-width: 540px;
   min-height: 630px;
 }
 
@@ -298,7 +299,7 @@ main>section {
 
 }
 
-.story1 {
+/* .story1 {
   grid-area: story1;
 }
 
@@ -316,16 +317,25 @@ main>section {
 
 .story5 {
   grid-area: story5;
-}
+} */
 
 .stories-card-container {
-  display: grid;
   gap: 20px;
-  justify-content: space-between;
-  grid-template-areas:
-    "story1   story2 story3"
-    "story1   story4 story5";
   margin-bottom: 80px;
+  justify-content: space-evenly;
+}
+
+/* .stories-card-container>div {
+  flex: 1;
+
+} */
+
+.right-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .card-title2 {
@@ -341,37 +351,98 @@ main>section {
   border-radius: 47.93px;
   background: rgb(60, 216, 232);
 
-  width: 174.51px;
+  max-width: 174.51px;
   height: 47.93px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 
-  /* position: absolute; */
 
 }
 
 .date {
   color: rgb(255, 255, 255);
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
-.story1-dp, .stories-card{
+
+.story1-dp,
+.stories-card {
   position: relative;
 }
-#date1{
+
+#date1 {
   position: absolute;
   left: 50px;
   top: 310px;
 }
-#date2, #date3, #date4, #date5{
+
+#date2,
+#date3,
+#date4,
+#date5 {
   position: absolute;
   left: 50px;
   top: 150px;
   background-color: rgb(149, 178, 38);
 }
-#date3{
+
+#date3 {
   background-color: rgb(93, 88, 240);
 }
 
+.foot {
+  background-color: rgb(1, 172, 253);
+  padding: 123px 228px 174px 140px;
+  
+  display: grid;
+  grid-template-columns: 2fr repeat(2,1fr);
+  gap: 100px;
+  margin: 0 auto;
+
+}
+
+.foot-title {
+  color: rgb(255, 255, 255);
+
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 39.51px;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+
+.foot-descrip {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 35px;
+}
+
+.foot2>h5 , .foot3>h5{
+  color: rgb(255, 255, 255);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.foot2>h6 {
+  color: rgb(255, 255, 255);
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 20px;
+}
