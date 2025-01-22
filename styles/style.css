@@ -74,7 +74,7 @@ body,
 
 .navbar,
 .banner,
-main {
+main , footer{
   max-width: 1440px;
   margin: 0 auto;
 
@@ -396,6 +396,8 @@ main>section {
 .foot {
   background-color: rgb(1, 172, 253);
   padding: 123px 228px 174px 140px;
+  max-width: 100%;
+  overflow: hidden;
   
   display: grid;
   grid-template-columns: 2fr repeat(2,1fr);

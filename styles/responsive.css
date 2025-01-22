@@ -52,6 +52,14 @@
         overflow-x: hidden;
       }
 
+      .foot{
+        grid-template-columns: repeat(1,1fr);
+        overflow: auto;
+        max-width: 100%;
+        overflow-x: hidden;
+        gap: 30px;
+      }
+      
 
 
 }
